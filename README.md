@@ -21,8 +21,6 @@ First, you'll need to clone this repository into your machine. All the next step
 ```
 $ git clone https://github.com/Tiago-Lira/secure-docker-registry.git
 Cloning into 'secure-docker-registry'...
-Username for 'https://github.com': Tiago-Lira
-Password for 'https://Tiago-Lira@github.com': 
 remote: Counting objects: 11, done.
 remote: Compressing objects: 100% (7/7), done.
 remote: Total 11 (delta 0), reused 11 (delta 0), pack-reused 0
