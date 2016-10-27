@@ -46,8 +46,7 @@ Then, open the Nginx configuration file at `nginx/registry.conf`, and override t
 You can skip this step if you already have your SSL certificate.
 In this step we are assuming that your remote machine is using ubuntu 16.04. But don't worry,
 for the other operating systems, you can follow the [official tutorial](https://certbot.eff.org/).
-Remmember to select Nginx and your Operating System and **don't forget to run the openssl command and $YOUR_DOMAIN**
-because it isn't in the certbot tutorial.
+Remmember to select Nginx and your Operating System and **don't forget to run the openssl command and override $YOUR_DOMAIN** because it isn't in the certbot tutorial.
 
 ```
 $ ssh root@$YOUR_DOMAIN
