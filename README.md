@@ -97,7 +97,7 @@ To see how to connect your Docker Client to the Docker Engine running on this vi
 
 ### Step 5: Deploy your registry
 
-Okay, now we have all things required to run our secure docker registry. To deploy our registry, activate your `docker-machine` and run `docker-compose up`. After this, you'll be able to access your docker registry at https://$YOUR_DOMAIN/v2/. The credentials to log in are `admin` and `registry`.
+Okay, now we have all things required to run our secure docker registry. To deploy our registry, activate your `docker-machine` and run `docker-compose up`. After this, you'll be able to access your docker registry at `https://$YOUR_DOMAIN/v2/`. The credentials to log in are `admin` and `registry`.
 
 ```bash
 $ eval $(docker-machine env registry)
