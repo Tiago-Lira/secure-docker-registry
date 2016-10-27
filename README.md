@@ -3,16 +3,15 @@
 This repository is intended to provide a easy way to deploy a secure docker registry.
 This docker registry will be deployed with Nginx and authentication through **HTTP BASIC**.
 
-To have a secure docker registry, you'll need a SSL certificate.  
-This repository explains how to generate your own SSL certificate using [certbot](https://certbot.eff.org/).
+To deploy a secure docker registry, you'll need a SSL certificate. This repository explains how to generate your own SSL certificate using [certbot](https://certbot.eff.org/).
 
 Any suggestions or issues are welcome in the issue navigator.  
 No more bullshit, It's only five steps and I hope you enjoy the tutorial.
 
 ### Before start, we assume:
 - You have a domain. In this tutorial, we'll be referencing it as `$YOUR_DOMAIN`;
-- You have a remote linux machine that already is linked to your `$YOUR_DOMAIN`;
-- You have `docker-compose` and `docker-machine` installed.
+- You have a remote linux machine using `$YOUR_DOMAIN` and with no services running on it;
+- You have `docker-compose` and `docker-machine` installed in your local machine.
 
 
 ### Step 1: Clone and override
