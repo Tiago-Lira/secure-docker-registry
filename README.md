@@ -90,7 +90,8 @@ Copying certs to the remote machine...
 Setting Docker configuration on the remote daemon...
 Checking connection to Docker...
 Docker is up and running!
-To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env registry
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run:
+docker-machine env registry
 
 ```
 
