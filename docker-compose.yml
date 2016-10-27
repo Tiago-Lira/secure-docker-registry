@@ -1,0 +1,25 @@
+version: '2'
+volumes:
+    data: {}
+
+services:
+    registry-nginx:
+        build: ./nginx
+        restart: always
+        container_name: registry-nginx
+        ports:
+            - 443:443
+            - 80:80
+        links:
+            - registry
+
+    registry:
+        image: registry:2
+        restart: always
+        container_name: registry
+        expose:
+            - 5000
+        environment:
+            - REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=/data
+        volumes:
+            - data:/data

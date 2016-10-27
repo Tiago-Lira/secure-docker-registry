@@ -1,0 +1,2 @@
+nginx/security/*
+!nginx/security/git.empty
