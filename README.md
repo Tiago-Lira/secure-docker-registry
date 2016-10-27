@@ -1,7 +1,6 @@
 # secure-docker-registry
 
-This repository is intended to provide a easy way to deploy a secure docker registry.
-This docker registry will be deployed with Nginx and authentication through **HTTP BASIC**.
+This repository is intended to provide a easy way to deploy a secure docker registry using Nginx and authentication through **HTTP BASIC**.
 
 To deploy a secure docker registry, you'll need a SSL certificate. This repository explains how to generate your own SSL certificate using [certbot](https://certbot.eff.org/).
 
