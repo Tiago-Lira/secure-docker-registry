@@ -52,6 +52,22 @@ $ ssh root@$YOUR_DOMAIN
 Welcome to Ubuntu 16.04.1 LTS (GNU/Linux 4.4.0-45-generic x86_64)
 $YOUR_DOMAIN~# sudo apt-get install letsencrypt
 $YOUR_DOMAIN~# letsencrypt certonly --standalone -d $YOUR_DOMAIN -d www.$YOUR_DOMAIN
+IMPORTANT NOTES:
+ - If you lose your account credentials, you can recover through
+   e-mails sent to $YOUR_EMAIL.
+ - Congratulations! Your certificate and chain have been saved at
+   /etc/letsencrypt/live/$YOUR_DOMAIN/fullchain.pem. Your
+   cert will expire on $DATE. To obtain a new version of the
+   certificate in the future, simply run Let's Encrypt again.
+ - Your account credentials have been saved in your Let's Encrypt
+   configuration directory at /etc/letsencrypt. You should make a
+   secure backup of this folder now. This configuration directory will
+   also contain certificates and private keys obtained by Let's
+   Encrypt so making regular backups of this folder is ideal.
+ - If you like Let's Encrypt, please consider supporting our work by:
+
+   Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+   Donating to EFF:                    https://eff.org/donate-le
 $YOUR_DOMAIN~# openssl dhparam -out /etc/letsencrypt/archive/$YOUR_DOMAIN/dhparam.pem 2048
 $YOUR_DOMAIN~# exit
 Connection to $YOUR_DOMAIN closed.
