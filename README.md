@@ -1,6 +1,6 @@
 # secure-docker-registry
 
-This repository is intended to provide a easy way to deploy a secure docker registry using Nginx and authentication through **HTTP BASIC**.
+This repository is intended to provide an easy way to deploy a secure docker registry using Nginx and authentication using **HTTP BASIC**.
 
 To deploy a secure docker registry, you'll need a SSL certificate. This repository explains how to generate your own SSL certificate using [certbot](https://certbot.eff.org/).
 
@@ -9,7 +9,7 @@ No more bullshit, It's only five steps and I hope you enjoy the tutorial.
 
 ### Before start, we assume:
 - You have a domain. In this tutorial, we'll be referencing it as `$YOUR_DOMAIN`;
-- You have a remote linux machine using `$YOUR_DOMAIN` and with no services running on it;
+- You have a remote linux machine using `$YOUR_DOMAIN` and no services running on it;
 - You have `docker-compose` and `docker-machine` installed in your local machine.
 
 
@@ -44,8 +44,8 @@ Then, open the Nginx configuration file at `nginx/registry.conf`, and override t
 
 You can skip this step if you already have your SSL certificate.
 In this step we are assuming that your remote machine is using ubuntu 16.04. But don't worry,
-for the other operating systems, you can follow the [official tutorial](https://certbot.eff.org/).
-Remmember to select Nginx and your Operating System and **don't forget to run the openssl command and override $YOUR_DOMAIN** because it isn't in the certbot tutorial.
+for other operating systems you can follow the [official tutorial](https://certbot.eff.org/).
+Remmember to select Nginx and your Operating System. **Don't forget to run the openssl command and override $YOUR_DOMAIN** because it isn't in the certbot tutorial.
 
 ```
 $ ssh root@$YOUR_DOMAIN
@@ -89,7 +89,7 @@ fullchain1.pem  privkey1.pem
 
 ### Step 4: Create a docker-machine
 
-We need the `docker-machine` script to run `docker-compose` in your remote server. The command bellow will create a link between your shell and your remote machine to run docker commands there. **You don't need to have docker installed in your remote machine.**
+We need the `docker-machine` script to run `docker-compose` in your remote server. The command bellow will create a link between your shell and your remote machine to run docker commands there. **Is not required to have docker installed in your remote machine. docker-machine will do it for you.**
 
 ```
 $ docker-machine create -d generic --generic-ip-address=$YOUR_DOMAIN registry
